@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="w-50 ml-auto mr-auto">
+      <form class="site-form d-flex align-items-center" action="#" method="GET">
+        <input class="site-input form-control mr-3" type="text" placeholder="ToDo List" name="text" autocomplete="off">
+        <button class="site-button btn btn-primary" type="submit">add</button>
+        <div class="custom-control custom-switch ml-3">
+          <input type="checkbox" class="danger-input-checkbox custom-control-input" id="customSwitch1">
+          <label class="custom-control-label" for="customSwitch1">🔥</label>
+        </div>
+      </form>
+      <ol class="list-group-boxs pt-5 list-unstyled">
+        
+      </ol>
+      <template id="elToDoListTemplate">
+        <li class="list-group-item mb-3 d-flex align-items-center border">
+          <input class="todo-list-checkbox" type="checkbox" name="checkbox">
+          <span class="todolist-text ml-3 mr-auto text-truncate flex-grow-1">bugun...</span>
+          <button class="todo-list-button btn ml-auto p-0 d-flex align-items-center">
+            <span class="material-icons">delete_forever</span>
+          </button>
+        </li>
+      </template>
+      <option class="alert alert-danger d-none"></option>
+    </div>
+  </div>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
